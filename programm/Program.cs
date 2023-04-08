@@ -3,4 +3,18 @@
 // Первоначальный массив можно ввести с клавиатуры, либо задать на старте выполнения алгоритма.
 // При решении не рекомендуется пользоваться коллекциями, лучше обойтись исключительно массивами.
 
+string[] arr = new string[3];
+string[] final_array = new string[3]; //TODO правильное количество элементов
 
+arr[0] = "Hello";
+arr[1] = "2";
+arr[2] = ":)";
+
+for (int i = 0; i < arr.Length; i++)
+{
+    if(arr[i].Length <= 3)
+    {
+        final_array[i] = arr[i];
+        Console.WriteLine(final_array[i]);
+    }
+}
